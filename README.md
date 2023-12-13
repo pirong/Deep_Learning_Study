@@ -5,8 +5,8 @@ Exponential Linear Unit (ELU) is an activation function defined as -
 
 $$ f(x)=   \left\{
 \begin{array}{ll}
-      x & x>0_{krit} \\
-      e^x-1 & x<=0_{krit} \\
+      x & x>0 \\
+      e^x-1 & x<=0 \\
 \end{array} 
 \right.  $$
 
