@@ -2,10 +2,17 @@
 A comparison study for deep learning models using the CIFAR-10 dataset.
 
 Exponential Linear Unit (ELU) is an activation function defined as -
+    $$ f(x)=   \left\{
+\begin{array}{ll}
+      x & x>0_{krit} \\
+      e^x-1 & x<=0_{krit} \\
+\end{array} 
+\right.  $$
 
 Compared to the commonly used Rectified Linear Unit (ReLU) activation function, ELU produces negative outputs.
 ELU is claimed to decrease loss faster and produce more accurate results.
-I tested these claims  by comparing the performance of neural networks using ELU and ReLU on these 4 network architectures - LeNet-5, AlexNet, VGG-16 and ResNet-50
+
+I tested these claims by comparing the performance of neural networks using ELU and ReLU on these 4 network architectures - LeNet-5, AlexNet, VGG-16 and ResNet-50
 
 ### LeNet-5
 For LeNet-5, while the ELU activation function performs marginally slower, accuracy is slightly higher compared to ReLU.
